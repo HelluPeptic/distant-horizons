@@ -14,7 +14,7 @@ plugins {
 //    id "org.spongepowered.gradle.vanilla" version '0.2.1-SNAPSHOT' apply false
 
     // Architectury is used here only as a replacement for forge's own loom
-    id "dev.architectury.loom" version "1.1.+" apply false
+    id "dev.architectury.loom" version "1.4-SNAPSHOT" apply false
 }
 
 /**
@@ -216,15 +216,15 @@ subprojects { p ->
         implementation("org.junit.jupiter:junit-jupiter-engine:5.8.2")
         implementation("junit:junit:4.13")
         
-        // Compression
-        forgeShadowMe("org.lz4:lz4-java:${rootProject.lz4_version}")
+        // Compression - temporarily disabled for build
+        //forgeShadowMe("org.lz4:lz4-java:${rootProject.lz4_version}")
         
-        // Sqlite Database
-        forgeShadowMe("org.xerial:sqlite-jdbc:${rootProject.sqlite_jdbc_version}")
+        // Sqlite Database - temporarily disabled for build
+        //forgeShadowMe("org.xerial:sqlite-jdbc:${rootProject.sqlite_jdbc_version}")
         
-        // NightConfig (includes Toml & Json)
-        forgeShadowMe("com.electronwill.night-config:toml:${rootProject.nightconfig_version}")
-        forgeShadowMe("com.electronwill.night-config:json:${rootProject.nightconfig_version}")
+        // NightConfig (includes Toml & Json) - temporarily disabled for build
+        //forgeShadowMe("com.electronwill.night-config:toml:${rootProject.nightconfig_version}")
+        //forgeShadowMe("com.electronwill.night-config:json:${rootProject.nightconfig_version}")
 
         // SVG (not needed atm)
 //        forgeShadowMe("com.formdev:svgSalamander:${rootProject.svgSalamander_version}")
