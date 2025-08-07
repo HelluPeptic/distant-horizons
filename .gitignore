@@ -35,3 +35,4 @@ build.properties
 
 # Sqlite databases
 *.sqlite
+coreSubProjects
